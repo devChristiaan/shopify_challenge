@@ -1,8 +1,12 @@
+import Header from "./components/Header";
+import SearchField from "./components/SearchField";
+
 function App() {
   return (
-    <div className="App">
-      <h1>This is to test the clean install of React</h1>
-    </div>
+    <>
+      <Header animationPath="/86558-in-peace.json" />
+      <SearchField />
+    </>
   );
 }
 
