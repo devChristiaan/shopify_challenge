@@ -1,23 +1,10 @@
-// import TextField from "@mui/material/TextField";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
-import Input from "@mui/material/Input";
 
 const SearchField = ({ ...props }) => {
   const { question, setQuestion, submit } = props;
-
-  const topPicks = [
-    {
-      label: "Why should I not be the first to strike?",
-      value: "Why should I not be the first to strike?",
-    },
-    {
-      label: "What does the wiseman say to the ignorant",
-      value: "What does the wiseman say to the ignorant",
-    },
-  ];
 
   return (
     <Box
