@@ -3,6 +3,7 @@ import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import Divider from "@mui/material/Divider";
 import Paper from "@mui/material/Paper";
+import Stack from "@mui/material/Stack";
 
 const Responses = ({ ...props }) => {
   const { answers } = props;
@@ -40,24 +41,27 @@ const Responses = ({ ...props }) => {
               answers.map((item) => {
                 return (
                   <>
-                    <Grid item xs={1}>
-                      <Typography variant="subtitle2" mb={2}>
-                        Question:
-                      </Typography>
-                      <Typography variant="subtitle2">Response:</Typography>
+                    <Grid item xs={12}>
+                      <Stack direction="row" spacing={3}>
+                        <Typography variant="subtitle2" mb={1}>
+                          Question:
+                        </Typography>
+                        <Typography variant="subtitle2" mb={1}>
+                          {item.question}
+                        </Typography>
+                      </Stack>
+                      <Divider />
                     </Grid>
-                    <Divider
-                      orientation="vertical"
-                      flexItem
-                      sx={{ marginRight: 1 }}
-                    />
-                    <Grid item xs={10}>
-                      <Typography variant="subtitle2" mb={2}>
-                        {item.question}
-                      </Typography>
-                      <Typography variant="subtitle2">
-                        {item.response}
-                      </Typography>
+                    <Grid item xs={12}>
+                      <Stack direction="row" spacing={3}>
+                        <Typography variant="subtitle2" mb={1}>
+                          Response:
+                        </Typography>
+                        <Typography variant="subtitle2" mb={1}>
+                          {item.response}
+                        </Typography>
+                      </Stack>
+                      <Divider />
                     </Grid>
                   </>
                 );
