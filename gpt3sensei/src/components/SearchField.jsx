@@ -18,7 +18,7 @@ const SearchField = ({ ...props }) => {
     >
       <Stack direction="row" spacing={2}>
         <TextField
-          label="Ask your question here and you will receive"
+          label="Ask Your Question Here and You Will Receive"
           variant="outlined"
           value={question}
           fullWidth
