@@ -17,10 +17,11 @@ const SearchField = ({ ...props }) => {
     >
       <Stack direction="row" spacing={2}>
         <TextField
-          label="Ask and you will receive"
+          label="Ask your question here and you will receive"
           variant="outlined"
           value={question}
           fullWidth
+          aria-label="Ask your ansewer and you will recieve an ansewer"
           onChange={(e) => setQuestion(e.target.value)}
           onKeyPress={(e) => {
             if (e.key === "Enter") {

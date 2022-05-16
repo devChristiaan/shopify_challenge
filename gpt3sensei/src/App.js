@@ -78,6 +78,8 @@ function App() {
           sx={{
             fontFamily: "PT Sans Caption",
           }}
+          component="h1"
+          aria-label="Web Sensei"
         >
           Web Sensei
         </Typography>
@@ -89,6 +91,8 @@ function App() {
           sx={{
             fontFamily: "PT Sans Caption",
           }}
+          component="h2"
+          aria-label="Type Your Question and You Will Receive Enlightenment"
         >
           Type Your Question and You Will Receive Enlightenment
         </Typography>

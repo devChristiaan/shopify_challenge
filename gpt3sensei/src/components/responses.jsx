@@ -23,6 +23,8 @@ const Responses = ({ ...props }) => {
             mt={3}
             mb={6}
             sx={{ textAlign: "center", fontFamily: "PT Sans Caption" }}
+            component="h3"
+            aria-label="My Answers"
           >
             My Answers
           </Typography>
@@ -42,10 +44,21 @@ const Responses = ({ ...props }) => {
                   <>
                     <Grid xs={12}>
                       <Stack direction="row" spacing={3}>
-                        <Typography variant="subtitle2" mb={1} pb={1}>
+                        <Typography
+                          variant="subtitle2"
+                          mb={1}
+                          pb={1}
+                          aria-label="Question"
+                        >
                           Question:
                         </Typography>
-                        <Typography variant="subtitle2" mb={1} pb={1}>
+                        <Typography
+                          variant="subtitle2"
+                          mb={1}
+                          pb={1}
+                          component="p"
+                          aria-label={item.question}
+                        >
                           {item.question}
                         </Typography>
                       </Stack>
@@ -53,10 +66,21 @@ const Responses = ({ ...props }) => {
                     </Grid>
                     <Grid xs={12}>
                       <Stack direction="row" spacing={3}>
-                        <Typography variant="subtitle2" mb={1} pb={1}>
+                        <Typography
+                          variant="subtitle2"
+                          mb={1}
+                          pb={1}
+                          aria-label="Response"
+                        >
                           Response:
                         </Typography>
-                        <Typography variant="subtitle2" mb={1} pb={1}>
+                        <Typography
+                          variant="subtitle2"
+                          mb={1}
+                          pb={1}
+                          component="p"
+                          aria-label={item.response}
+                        >
                           {item.response}
                         </Typography>
                       </Stack>
