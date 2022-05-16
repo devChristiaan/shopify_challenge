@@ -34,34 +34,33 @@ const Responses = ({ ...props }) => {
             direction="row"
             justifyContent="flex-start"
             alignItems="flex-start"
-            spacing={2}
-            sx={{ paddingBottom: 1 }}
+            sx={{ padding: 3 }}
           >
             {answers ? (
               answers.map((item) => {
                 return (
                   <>
-                    <Grid item xs={12}>
+                    <Grid xs={12}>
                       <Stack direction="row" spacing={3}>
-                        <Typography variant="subtitle2" mb={1}>
+                        <Typography variant="subtitle2" mb={1} pb={1}>
                           Question:
                         </Typography>
-                        <Typography variant="subtitle2" mb={1}>
+                        <Typography variant="subtitle2" mb={1} pb={1}>
                           {item.question}
                         </Typography>
                       </Stack>
-                      <Divider />
+                      <Divider sx={{ marginBottom: 2 }} />
                     </Grid>
-                    <Grid item xs={12}>
+                    <Grid xs={12}>
                       <Stack direction="row" spacing={3}>
-                        <Typography variant="subtitle2" mb={1}>
+                        <Typography variant="subtitle2" mb={1} pb={1}>
                           Response:
                         </Typography>
-                        <Typography variant="subtitle2" mb={1}>
+                        <Typography variant="subtitle2" mb={1} pb={1}>
                           {item.response}
                         </Typography>
                       </Stack>
-                      <Divider />
+                      <Divider sx={{ marginBottom: 2 }} />
                     </Grid>
                   </>
                 );
