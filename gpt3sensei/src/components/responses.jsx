@@ -15,7 +15,7 @@ const Responses = ({ ...props }) => {
         maxWidth: "100%",
       }}
     >
-      {answers ? (
+      {answers.length > 0 ? (
         <>
           <Typography
             variant="h4"

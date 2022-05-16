@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -45,6 +45,19 @@ function App() {
       ]);
     }
   };
+
+  useEffect(() => {
+    if (answers.length > 0) {
+      localStorage.setItem("answers", JSON.stringify(answers));
+    }
+  }, [answers]);
+
+  useEffect(() => {
+    const items = JSON.parse(localStorage.getItem("answers"));
+    if (items) {
+      setAnswers(items);
+    }
+  }, []);
 
   return (
     <Box bgcolor="#FAFAFA" sx={{ height: "100vh" }}>
