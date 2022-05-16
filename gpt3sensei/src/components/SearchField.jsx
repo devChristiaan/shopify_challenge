@@ -8,6 +8,7 @@ const SearchField = ({ ...props }) => {
 
   return (
     <Box
+      bgcolor="#FFFFFF"
       sx={{
         margin: "auto",
         marginTop: "15px",
