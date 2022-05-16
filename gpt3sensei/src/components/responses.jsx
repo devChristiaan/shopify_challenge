@@ -13,6 +13,7 @@ const Responses = ({ ...props }) => {
       sx={{
         margin: "auto",
         marginTop: "15px",
+        marginBottom: "35px",
         maxWidth: "100%",
       }}
     >

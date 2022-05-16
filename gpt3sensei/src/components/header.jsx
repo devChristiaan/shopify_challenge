@@ -18,7 +18,10 @@ const Header = ({ animationPath }) => {
       }}
     >
       <div onClick={() => null}>
-        <Lottie options={defaultOptions} />
+        <Lottie
+          aria-label="Web sensei floating up and down whilst meditating"
+          options={defaultOptions}
+        />
       </div>
     </Box>
   );
