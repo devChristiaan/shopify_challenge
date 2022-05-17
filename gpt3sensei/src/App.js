@@ -60,7 +60,7 @@ function App() {
   }, []);
 
   return (
-    <Box bgcolor="#FAFAFA" sx={{ height: "100%" }}>
+    <Box>
       <CssBaseline />
       <Grid
         container={true}

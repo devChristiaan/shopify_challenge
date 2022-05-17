@@ -21,6 +21,11 @@ const theme = createTheme({
       '"Segoe UI Symbol"',
     ].join(","),
   },
+  palette: {
+    background: {
+      default: "#FAFAFA",
+    },
+  },
 });
 
 root.render(
